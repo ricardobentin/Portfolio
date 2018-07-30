@@ -1,4 +1,4 @@
-$(function() {
+$(function () {
 
     "use strict";
 
@@ -6,7 +6,7 @@ $(function() {
 
     /* Preloader
           -------------------------------------------------------*/
-    $(window).on('load', function() {
+    $(window).on('load', function () {
         $("#loader").fadeOut(500);
     });
 
@@ -14,27 +14,27 @@ $(function() {
         return false;
     });
      */
-   
-   
-	
+
+
+
 
     /* smooth scroll
     -------------------------------------------------------*/
-  $.scrollIt({
-  upKey: 38,             // key code to navigate to the next section
-  downKey: 40,           // key code to navigate to the previous section
-  easing: 'linear',      // the easing function for animation
-  scrollTime: 600,       // how long (in ms) the animation takes
-  activeClass: 'active', // class given to the active nav element
-  onPageChange: null,    // function(pageIndex) that is called when page is changed
-  topOffset: 0           // offste (in px) for fixed top navigation
-});
+    $.scrollIt({
+        upKey: 38,             // key code to navigate to the next section
+        downKey: 40,           // key code to navigate to the previous section
+        easing: 'linear',      // the easing function for animation
+        scrollTime: 600,       // how long (in ms) the animation takes
+        activeClass: 'active', // class given to the active nav element
+        onPageChange: null,    // function(pageIndex) that is called when page is changed
+        topOffset: 0           // offste (in px) for fixed top navigation
+    });
 
 
     /* navbar scrolling background
     -------------------------------------------------------*/
-    
- $(window).scroll(function () {
+
+    $(window).scroll(function () {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 5) {
@@ -54,13 +54,13 @@ $(function() {
         });
     });
 
-		
 
-	
+
+
     /* typejs
     -------------------------------------------------------*/
     $(' .typed-element').typed({
-        strings: ["Magician", "Ui/Ux Designer", "Photographer"],
+        strings: ["Product Manager", "Solutions Architect", "Aspiring Web Developer", "Recovering Investment Banker", "Technology Enthusiast"],
         loop: true,
         startDelay: 1000,
         backDelay: 2000
@@ -157,18 +157,18 @@ $(function() {
 
 
 
-   
 
- $('.img-pop').magnificPopup({
-            type: 'image',
-            closeOnContentClick: true,
-            mainClass: 'mfp-fade',
-            gallery: {
-                enabled: true,
-                navigateByImgClick: true,
-                preload: [0, 1]
-            }
-        });
+
+    $('.img-pop').magnificPopup({
+        type: 'image',
+        closeOnContentClick: true,
+        mainClass: 'mfp-fade',
+        gallery: {
+            enabled: true,
+            navigateByImgClick: true,
+            preload: [0, 1]
+        }
+    });
 
 
     // counterUp
@@ -182,7 +182,7 @@ $(function() {
 
     /* Progress Bars
     -------------------------------------------------------*/
-    wind.on("scroll", function() {
+    wind.on("scroll", function () {
 
         var bodyScroll = wind.scrollTop()
 
@@ -252,8 +252,7 @@ $(function() {
                 type: "POST",
                 url: url,
                 data: $(this).serialize(),
-                success: function (data)
-                {
+                success: function (data) {
                     // data = JSON object that contact.php returns
 
                     // we recieve the type of the message: success x danger and apply it to the 
@@ -262,7 +261,7 @@ $(function() {
 
                     // let's compose Bootstrap alert box HTML
                     var alertBox = '<div class="alert ' + messageAlert + ' alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>' + messageText + '</div>';
-                    
+
                     // If we have messageAlert and messageText
                     if (messageAlert && messageText) {
                         // inject the alert to .messages div in our form
@@ -283,37 +282,37 @@ $(function() {
 
 
 
-$(window).on("load", function() {
+$(window).on("load", function () {
 
 
 
-	var $container = $('.gallery');
-            var $filter = $('#menu-filter');
-            $container.isotope({
-                filter: '*',
-                layoutMode: 'masonry',
-                animationOptions: {
-                    duration: 750,
-                    easing: 'linear'
-                }
-            });
+    var $container = $('.gallery');
+    var $filter = $('#menu-filter');
+    $container.isotope({
+        filter: '*',
+        layoutMode: 'masonry',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear'
+        }
+    });
 
-            $filter.find('a').on("click",function() {
-                var selector = $(this).attr('data-filter');
-                $filter.find('a').removeClass('active');
-                $(this).addClass('active');
-                $container.isotope({
-                    filter: selector,
-                    animationOptions: {
-                        animationDuration: 750,
-                        easing: 'linear',
-                        queue: false,
-                    }
-                });
-                return false;
-            });
-	
-	
+    $filter.find('a').on("click", function () {
+        var selector = $(this).attr('data-filter');
+        $filter.find('a').removeClass('active');
+        $(this).addClass('active');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                animationDuration: 750,
+                easing: 'linear',
+                queue: false,
+            }
+        });
+        return false;
+    });
+
+
 
     // Wow
     wow = new WOW({
@@ -325,7 +324,7 @@ $(window).on("load", function() {
     });
     wow.init();
 
-	
+
     /*-----------------------
         google map
       -----------------------*/
@@ -457,7 +456,7 @@ $(window).on("load", function() {
             fullscreenControl: false,
             styles: styles
         };
-        var initMap = function() {
+        var initMap = function () {
             var contactdata = $('#contact-map').data('content');
             var map = new google.maps.Map(document.getElementById("contact-map"), mapOptions);
             var bounds = new google.maps.LatLngBounds();
