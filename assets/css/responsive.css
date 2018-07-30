@@ -1,0 +1,142 @@
+
+/* -------------------------------------------------------
+                     phone & tablet
+-------------------------------------------------------- */
+
+@media (max-width: 991px) {
+	
+	
+	.social-icon i {
+			margin-right: 2px;
+			margin-left: 2px;
+		}
+	
+	.header .intro-text h1 {
+		font-size: 30px;
+		text-align: center;
+	}
+	.header .intro-text p,.header .intro-text p span {
+		text-align: center;
+		font-size: 18px;
+	}
+
+	.header {
+		background: url("../img/header-mobile.jpg");
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.intro-text {
+		padding-top:0px !important;
+	}
+	
+	
+	.header-overlay:before {
+		background: rgba(0, 0, 0, .7);
+	}
+	.contact-button {
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		margin-top:60px;
+	}
+	.about-content{margin-top:30px;margin-left:0;}
+	.numbers .numbers-item {
+		margin-bottom: 60px;
+	}
+	.pricing-table{margin-top:30px;}
+}
+
+@media (max-width: 767px) {
+	
+	
+	  .navbar-nav {
+      border-top: 1px solid #ccc;
+	  margin-top: 15px;
+    }
+
+	.section-padding {
+		padding: 50px 0 50px 0!important;
+	}
+	.section-title{margin-bottom:30px;}
+	.resume-edu {margin-top: 50px;}
+	.portfolio-filter ul {
+		padding: 0;
+	}
+	.single-portfolio {
+		height: auto !important;
+	}
+	
+	.person-info li{width:100%;}
+	.xs-mb-70 {
+		margin-bottom: 70px !important;
+	}
+	
+	
+	.hire-info ul li{margin-top:15px;}
+	.timeline:before {
+		left: 0
+	}
+	.timeline .timeline-event {
+		padding-left: 20px;
+	}
+	
+	.timeline .timeline-event .timeline-event-point {
+		top: 3px;
+		left: calc(0px - 14px)
+	}
+	.timeline .timeline-event .timeline-event-date,
+	.timeline .timeline-event .timeline-event-content {
+		width: auto;
+		top:0;
+	}
+	.timeline .timeline-event .timeline-event-date {
+		float: none;
+		text-align: left;
+		margin-bottom: 15px;
+		margin-left: 15px;
+		padding-top: 5px;
+	}
+	.timeline .timeline-event .timeline-event-content {
+		float: none;
+	}
+	.timeline .timeline-event:nth-child(2n) .timeline-event-date {
+		float: none;
+	}
+	.timeline .timeline-event:nth-child(2n) .timeline-event-content {
+		text-align: left;
+	}
+	.timeline .timeline-event:nth-child(2n) .timeline-event-content:after {
+		right: 100%;
+		left: auto;
+		border-width: 0 20px 20px 0;
+		border-color: transparent #F9F9F9 transparent transparent
+	}
+	.numbers .numbers-item h2 {font-size: 25px;margin: 15px;
+	}
+	.numbers .numbers-item h6{font-size: 16px;}
+	.owl-theme .owl-nav.disabled + .owl-dots {margin-top: 15px;}
+	
+	footer {padding-top:50px;}
+	footer .rights p {margin-top:50px;}
+	}
+
+@media (max-width: 576px) {
+	.filtering button {
+		font-size: 14px !important;
+		padding: 2px 5px !important;
+		margin-left: 2px !important;
+		border-radius: 0 !important;
+	}
+	ul.hire-info  li {
+		width: 100%;
+		margin-bottom:15px;
+	}
+	.owl-item .clients-logo{padding: 30px 70px;margin-bottom:0;}
+	
+	.item-testimonial {padding: 20px 0px;}
+	.testimonial  p.quote{width:90%;}
+	.sub-tit { margin-bottom: 30px;}
+	.contact-box{width:100%;}
+	
+}
