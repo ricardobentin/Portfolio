@@ -37,27 +37,35 @@ TABLE OF CONTENTS
 h1, h2, h3, h4, h5, h6,p{margin:0;}
 #psychic{
     max-height: 145px;
+    padding: 5px;
 } 
 #gem{
     max-height: 145px;
+    padding: 5px;
 } 
 #trivia{
     max-height: 145px;
+    padding: 5px;
 } 
 #gifTastic{
     max-height: 145px;
+    padding: 5px;
 } 
 #trainScheduler{
     max-height: 145px;
+    padding: 5px;
 } 
 #compass{
     max-height: 145px;
+    padding: 5px;
 } 
 #tbd1{
     max-height: 145px;
+    padding: 5px;
 } 
 #tbd2{
     max-height: 145px;
+    padding: 5px;
 } 
 
 img {
