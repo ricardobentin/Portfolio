@@ -83,6 +83,10 @@ h1, h2, h3, h4, h5, h6,p{margin:0;}
     max-height: 145px;
     padding: 5px;
 } 
+#newsscraper{
+    max-height: 145px;
+    padding: 5px;
+} 
 
 img {
      width: 100%;
